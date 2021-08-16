@@ -5,9 +5,6 @@ import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 
 export default function Landing() {
-  const USER_ID = process.env.USER_ID
-  const TEMPLATE_ID = process.env.TEMPLATE_ID
-  const SERVICE_ID = process.env.SERVICE_ID
   const [toSend, setToSend] = useState({
     from_name: "",
     message: "",
