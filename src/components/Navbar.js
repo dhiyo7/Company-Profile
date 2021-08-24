@@ -20,7 +20,7 @@ export default function Navbar(props) {
             }
             href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
           >
-            Company Profile
+            BAMS AGENCY INDONESIA
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -75,7 +75,7 @@ export default function Navbar(props) {
                     : "text-gray-800 hover:text-gray-600") +
                   " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 }
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
+                href="#"
               >
                 <i
                   className={

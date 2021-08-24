@@ -3,6 +3,7 @@ import { send } from "emailjs-com";
 
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
+import Galery from "components/Galery.js";
 
 export default function Landing() {
   const [toSend, setToSend] = useState({
@@ -12,14 +13,14 @@ export default function Landing() {
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-      'service_phsb3gd',
-      'template_xci03ga',
+      "service_phsb3gd",
+      "template_xci03ga",
       toSend,
-      'user_wGKNvLoWgd57cQk5sg5OI',
+      "user_wGKNvLoWgd57cQk5sg5OI"
     )
       .then((res) => {
         console.log("SUCCESS! ", res.status, res.text);
-        console.log("CEK ",res);
+        console.log("CEK ", res);
       })
       .catch((err) => {
         console.log("FAILED ", err);
@@ -55,17 +56,14 @@ export default function Landing() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">
-                    Your story starts with us.
-                  </h1>
                   <p className="mt-4 text-lg text-gray-300">
-                    PT. Bams Agency Indonesia is a private company created in
-                    2020. At its establishment, the company secured and
-                    consolidated a diversified shareholding portfolio. The
-                    company now plays an active role in stimulating and guiding
-                    the development of its customer companies, all
-                    well-established entities and leading specialists in their
-                    own fields.
+                    PT. Bams Agency Indonesia adalah perusahaan swasta yang
+                    didirikan pada tahun 2020. Pada pendiriannya, perusahaan
+                    mengamankan dan mengkonsolidasikan portofolio kepemilikan
+                    saham yang terdiversifikasi. Perusahaan sekarang memainkan
+                    peran aktif dalam merangsang dan membimbing pengembangan
+                    perusahaan pelanggannya, semua entitas mapan dan spesialis
+                    terkemuka di bidangnya masing-masing.
                   </p>
                 </div>
               </div>
@@ -102,11 +100,12 @@ export default function Landing() {
                       <i className="fas fa-award"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      We think for the long term
+                      Kami berpikir untuk jangka panjang
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      We engage in thoughtful decision making and believe that
-                      excellence results should drive our decisions.
+                      Kami terlibat dalam pengambilan keputusan yang bijaksana
+                      dan percaya bahwa hasil yang unggul harus mendorong
+                      keputusan kami.
                     </p>
                   </div>
                 </div>
@@ -119,13 +118,13 @@ export default function Landing() {
                       <i className="fas fa-retweet"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      We work together to achieve common goals
+                      Kami bekerja sama untuk mencapai tujuan bersama.
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      We show respect and humility towards each other and our
-                      clients. We believe in creating a supportive work
-                      environment that fosters teamwork, collegiality, and
-                      effective communication.
+                      Kami menunjukkan rasa hormat dan kerendahan hati terhadap
+                      satu sama lain dan klien kami. Kami percaya dalam
+                      menciptakan lingkungan kerja yang mendukung yang mendorong
+                      kerja tim, kolegialitas, dan komunikasi yang efektif.
                     </p>
                   </div>
                 </div>
@@ -138,11 +137,12 @@ export default function Landing() {
                       <i className="fas fa-fingerprint"></i>
                     </div>
                     <h6 className="text-xl font-semibold">
-                      We strive for excellence
+                      Kami berusaha untuk keunggulan{" "}
                     </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      We make the extra effort, practice continuous improvement,
-                      and stay flexible to adapt to changing circumstances.
+                      Kami melakukan upaya ekstra, mempraktikkan peningkatan
+                      berkelanjutan, dan tetap fleksibel untuk beradaptasi
+                      dengan keadaan yang berubah.
                     </p>
                   </div>
                 </div>
@@ -155,12 +155,14 @@ export default function Landing() {
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Our VISION
+                  Visi Kami
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
                   <ul>
-                    <li>To be a trusted partner for our clients</li>
-                    <li>To be a respected leader in global asset management</li>
+                    <li>Menjadi mitra terpercaya bagi klien kami</li>
+                    <li>
+                      Menjadi pemimpin yang disegani dalam manajemen aset global
+                    </li>
                   </ul>
                 </p>
               </div>
@@ -188,14 +190,6 @@ export default function Landing() {
                         className="text-pink-600 fill-current"
                       ></polygon>
                     </svg>
-                    {/* <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
-                    </p> */}
                   </blockquote>
                 </div>
               </div>
@@ -238,12 +232,12 @@ export default function Landing() {
                   <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">Our MISSION</h3>
+                  <h3 className="text-3xl font-semibold">Misi Kami</h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    To add value with active portfolio management to help our
-                    clients reach their long-term financial goals. We achieve
-                    this through our investment strategies, adhering to our
-                    values and investment principles.
+                    Untuk menambah nilai dengan manajemen portofolio aktif untuk
+                    membantu klien kami mencapai tujuan keuangan jangka panjang
+                    mereka. Kami mencapai ini melalui strategi investasi kami,
+                    mengikuti nilai-nilai dan prinsip-prinsip investasi kami.
                   </p>
                 </div>
               </div>
@@ -255,158 +249,93 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
+                <h2 className="text-4xl font-semibold">Bentuk Kerjasama</h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+                  Berikut beberapa bentuk kerja sama BAMS AGENCY dengan
+                  perusahaan lain
                 </p>
               </div>
             </div>
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div class="rounded-lg h-72 overflow-hidden">
                   <img
-                    alt="..."
-                    src={require("assets/img/team-1-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    alt="content"
+                    class="object-cover object-center h-full w-full"
+                    src="https://ih1.redbubble.net/image.86288047.9243/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg"
                   />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ryan Tompson</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Web Developer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                  Shooting Stars
+                </h2>
+                <p class="text-base leading-relaxed mt-2">
+                  Swag shoivdigoitch literally meditation subway tile tumblr
+                  cold-pressed. Gastropub street art beard dreamcatcher neutra,
+                  ethical XOXO lumbersexual.
+                </p>
+                <a class="text-red-600	inline-flex items-center mt-3">
+                  Learn More
+                </a>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div class="rounded-lg h-72 overflow-hidden">
                   <img
-                    alt="..."
-                    src={require("assets/img/team-2-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    alt="content"
+                    class="object-cover object-center h-full w-full"
+                    src="https://ih1.redbubble.net/image.86288047.9243/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg"
                   />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Marketing Specialist
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                  Shooting Stars
+                </h2>
+                <p class="text-base leading-relaxed mt-2">
+                  Swag shoivdigoitch literally meditation subway tile tumblr
+                  cold-pressed. Gastropub street art beard dreamcatcher neutra,
+                  ethical XOXO lumbersexual.
+                </p>
+                <a class="text-red-600	inline-flex items-center mt-3">
+                  Learn More
+                </a>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div class="rounded-lg h-72 overflow-hidden">
                   <img
-                    alt="..."
-                    src={require("assets/img/team-3-800x800.jpg").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    alt="content"
+                    class="object-cover object-center h-full w-full"
+                    src="https://ih1.redbubble.net/image.86288047.9243/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg"
                   />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      UI/UX Designer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                  Shooting Stars
+                </h2>
+                <p class="text-base leading-relaxed mt-2">
+                  Swag shoivdigoitch literally meditation subway tile tumblr
+                  cold-pressed. Gastropub street art beard dreamcatcher neutra,
+                  ethical XOXO lumbersexual.
+                </p>
+                <a class="text-red-600	inline-flex items-center mt-3">
+                  Learn More
+                </a>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div class="rounded-lg h-72 overflow-hidden">
                   <img
-                    alt="..."
-                    src={require("assets/img/team-4-470x470.png").default}
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    alt="content"
+                    class="object-cover object-center h-full w-full"
+                    src="https://ih1.redbubble.net/image.86288047.9243/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg"
                   />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder and CEO
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
                 </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+                  Shooting Stars
+                </h2>
+                <p class="text-base leading-relaxed mt-2">
+                  Swag shoivdigoitch literally meditation subway tile tumblr
+                  cold-pressed. Gastropub street art beard dreamcatcher neutra,
+                  ethical XOXO lumbersexual.
+                </p>
+                <a class="text-red-600	inline-flex items-center mt-3">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -437,7 +366,7 @@ export default function Landing() {
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
-                  GROWTH STRATEGY
+                  STRATEGI PERTUMBUHAN
                 </h2>
               </div>
             </div>
@@ -447,13 +376,13 @@ export default function Landing() {
                   <i className="fas fa-medal text-xl"></i>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
-                  HOW WE ACHIEVE
+                  BAGAIMANA KITA MENCAPAI
                 </h6>
                 <p className="mt-2 mb-4 text-gray-500">
-                  We apply active management to seek the best value for our
-                  clients. Thorough analysis and our relative-value framework
-                  lead to conviction in our selection, which may result in a
-                  focused result.
+                  Kami menerapkan manajemen aktif untuk mencari nilai terbaik
+                  bagi klien kami. Analisis menyeluruh dan kerangka nilai
+                  relatif kami mengarah pada keyakinan dalam pilihan kami, yang
+                  dapat menghasilkan hasil yang terfokus.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -461,11 +390,12 @@ export default function Landing() {
                   <i className="fas fa-poll text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  HOW WE WORK
+                  BAGAIMANA KITA BEKERJA
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  We collectively hone ideas via borderless cross-pollination
-                  across our team for better judgement and competitive results.
+                  Kami secara kolektif mengasah ide melalui penyerbukan silang
+                  tanpa batas di seluruh tim kami untuk penilaian yang lebih
+                  baik dan hasil yang kompetitif.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -473,12 +403,13 @@ export default function Landing() {
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  HOW WE THINK
+                  BAGAIMANA KITABERFIKIR{" "}
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  We bring a more flexible perspective than others. We view a
-                  wider range of opportunities and look beyond conventional
-                  boundaries to find hidden value.
+                  Kami membawa perspektif yang lebih fleksibel daripada yang
+                  lain. Kami melihat peluang yang lebih luas dan melihat
+                  melampaui batasan konvensional untuk menemukan nilai
+                  tersembunyi.
                 </p>
               </div>
             </div>
@@ -507,7 +438,7 @@ export default function Landing() {
                         </label>
                         <input
                           type="text"
-                          name='from_name'
+                          name="from_name"
                           value={toSend.from_name}
                           onChange={handleChange}
                           className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
@@ -528,7 +459,7 @@ export default function Landing() {
                           cols="80"
                           className="border-0 px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
                           placeholder="Type a message..."
-                          name='message'
+                          name="message"
                           defaultValue={toSend.message}
                           onChange={handleChange}
                         />
